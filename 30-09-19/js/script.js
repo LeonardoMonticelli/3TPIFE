@@ -15,10 +15,30 @@
 
 // 10 - if statements
 
-var x = prompt("What does Sonic do?")
+// var x = prompt("What does Sonic do?")
 
-if (x == "Go fast", "Run", "He goes fast", "Running around at the speed of sound") {
-    alert("Correct!");
+// if (x == "fly") {
+//     alert("Not really...");
+// }
+// if (x == "go fast" || "run" || "run around at the speed of sound") {
+//     alert("Correct!");
+// } else {
+//     alert("No! you dingus...");
+// }
+
+//---------------------------------------------------------------------------------------------
+
+// 13 -
+
+var age = prompt("Please enter your age.");
+var diploma = prompt("Do you have a diploma?");
+
+if (age >= 20) {
+    if (diploma == "yes") {
+        alert("You can become a teacher");
+    } else {
+        alert("Keep studying")
+    }
 } else {
-    alert("No! you dingus...");
+    alert("You can NOT become a teacher yet >:(");
 }
