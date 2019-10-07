@@ -1,4 +1,15 @@
-var fib = 1;
-var fib2 = 1;
+var a = 1;
+var b = 1;
 
-var fib2 = fib + fib2;
+console.log(a);
+
+console.log(b);
+
+for (x = 0; x != 121; x++) {
+    var c = a + b;
+
+    a = b;
+
+    b = c
+}
+console.log(c);
