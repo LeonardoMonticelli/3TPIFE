@@ -11,5 +11,6 @@ for (x = 0; x != 121; x++) {
     a = b;
 
     b = c
+
+    console.log(c);
 }
-console.log(c);

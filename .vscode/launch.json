@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///home/dengmamm/Documents/Repository/3TPIF-E-JS/07-10-19/2%20-%20fibonacci/index.html",
+            "url": "file:///C:/Users/Leonardo/Documents/Documents/VScode/JS/3TPIF-E-JS/07-10-19/2%20-%20fibonacci/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
