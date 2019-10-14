@@ -20,6 +20,11 @@ var b = 1;
 
 console.log(a, b);
 
+function String() {
+    var n = c.toString();
+    document.getElementById("id").innerHTML = n;
+}
+
 for (c = 0; c <= 100; c++) {
     // var c = a + b;
 
@@ -29,10 +34,4 @@ for (c = 0; c <= 100; c++) {
 
     // console.log(c);
 
-    for (i = 0; i <= 100; i++) {
-        console.log(i);
-    }
-
 }
-var n = c.toString();
-document.getElementById("id").innerHTML = n;
