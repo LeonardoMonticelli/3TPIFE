@@ -20,18 +20,19 @@ var b = 1;
 
 console.log(a, b);
 
-function String() {
-    var n = c.toString();
-    document.getElementById("id").innerHTML = n;
-}
+document.getElementById("id");
+for (c = 0; c < 100; c++) {
 
-for (c = 0; c <= 100; c++) {
-    // var c = a + b;
+    var c = a + b;
 
-    // a = b;
+    a = b;
 
-    // b = c;
+    b = c;
 
-    // console.log(c);
+    console.log("Fibo number " + a);
 
+    for (j = a + 1; j < b && j < 100; j++) {
+        console.log(j);
+
+    }
 }

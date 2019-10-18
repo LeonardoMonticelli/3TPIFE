@@ -86,4 +86,3 @@ console.log("This programm has looped: " + fi + " times.");*/
 
 //Exercise 7
 var table = document.getElementById("myTable");
-var row = table.
