@@ -8,13 +8,9 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-<<<<<<< HEAD
-            "url": "file:///home/dengmamm/Documents/Repository/3TPIF-E-JS/Extra_Ex%20for%20Test1/index.html"
+            "url": "file:///C:/Users/monle399/Documents/3TPIF-E-JS/21-10-19/index.html",
 //            "url": "file:///home/dengmamm/Documents/Repository/3TPIF-E-JS/14-10-19/index.html",
-=======
-            //"url": "file:///home/dengmamm/Documents/Repository/3TPIF-E-JS/14-10-19/index.html",
-            "url": "file:///C:/Users/monle399/Documents/3TPIF-E-JS/14-10-19/index.html",
->>>>>>> 344bd041aaea86ce42a38ee81c2cadffc5668c9d
+            // "url": "file:///C:/Users/monle399/Documents/3TPIF-E-JS/14-10-19/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
