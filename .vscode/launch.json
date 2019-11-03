@@ -8,7 +8,14 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
+<<<<<<< HEAD
             "url": "file:///C:/Users/Leonardo/Documents/Documents/VScode/JS/3TPIF-E-JS/Extra_Ex%20for%20Test1/index.html",
+=======
+//            "url": "file:///C:/Users/monle399/Documents/3TPIF-E-JS/21-10-19/index.html",
+            "url":"file:///home/dengmamm/Documents/Repository/3TPIF-E-JS/Test%201%2024-10-19/index.html",
+//            "url": "file:///home/dengmamm/Documents/Repository/3TPIF-E-JS/14-10-19/index.html",
+            // "url": "file:///C:/Users/monle399/Documents/3TPIF-E-JS/14-10-19/index.html",
+>>>>>>> 70ac97ab5f043d16671eb18a59a7c437755f1842
             "webRoot": "${workspaceFolder}"
         }
     ]
