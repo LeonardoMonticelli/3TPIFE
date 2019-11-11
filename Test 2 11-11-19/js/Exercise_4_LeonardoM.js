@@ -2,7 +2,7 @@ var askPrompt = prompt("Please enter a number between 5 and 10");
 var ask = Number(askPrompt);
 
 for (var i = 0; i <= 10; i++)
-    if (ask <= 10 && ask >= 5) {
+    if (ask < 10 && ask > 5) {
         alert("Congratulations - you know math");
         i = 10;
     } else {
