@@ -12,5 +12,4 @@ var result = "";
 for (var i = 0; i < 4; i++) {
     result += yellowBox + greenBox;
 }
-
 htmlElem.innerHTML = result;
