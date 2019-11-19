@@ -1,7 +1,7 @@
 var myHtmlItem = document.getElementById("container");
 
 // var myYellowBox = '<div id="myBox_R-C" class="box yellowBox"></div>';
-var myGreenBox = '<div id="myBox_R-C" class="box greenBox"></div>';
+// var myGreenBox = '<div id="myBox_R-C" class="box greenBox"></div>';
 
 var result = "";
 
@@ -27,6 +27,13 @@ for (lines = 0; lines < 8; lines++) {
 myHtmlItem.innerHTML = result;
 
 function BuildBox(line, col, color) {
-    var result = '<div id="myBox_' + line + '-' + col + '" class="box ' + color + '"></div>';
+    //<div id="myBox_6-4" class="box greenBox"onclick="clickedBox(''" ></div>
+    var result = '<div id="myBox_' + line + '-' + col + '" class="box ' + color + '"' + ' onclick="clickedBox(this.id)' + '"' + ' ></div>';
+    // if (color == "greenBox") {
+    //     result += "'green');";
+    // } else {
+    //     result += "'yellow');";
+    // }
+    console.log(result);
     return result;
 }
