@@ -32,4 +32,5 @@ var userTwo = new User("papa@papa.com", "papa");
 
 userOne.login().updateScore().updateScore().logout();
 
+
 var users = [userOne, userTwo];
