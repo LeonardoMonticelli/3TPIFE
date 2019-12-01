@@ -11,7 +11,7 @@
             width: 32px;
             height: 32px;
             display: inline-block;
-            border: 1px solid black;
+            /* border: 1px solid rgb(219, 219, 219); */
         }
         
         .bead {
@@ -19,25 +19,25 @@
             background-position: center;
         }
         
-        .bead .bYellow {
-            background-image: url("images/BeadYellow.png");
-        }
-        
-        .bead .bBlack {
+        #bead1 {
             background-image: url("images/BeadBlack.png");
         }
         
-        .bead .bRed {
+        #bead2 {
             background-image: url("images/BeadRed.png");
+        }
+        
+        #bead3 {
+            background-image: url("images/BeadYellow.png");
         }
     </style>
 </head>
 
-<body>
+<body onload="">
     <!-- <div class="box"></div> -->
     <div id="container"></div>
 
-    <button onclick="">Create image</button>
+    <button onclick="createImage();">Create image</button>
 
     <script src="js/script.js"></script>
 </body>

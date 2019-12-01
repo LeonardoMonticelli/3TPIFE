@@ -3,15 +3,15 @@ function buildBoard(sizeOfBoard) {
     var result = "";
 
     for (lines = 0; lines < sizeOfBoard; lines++) {
-        result = result + "<div>";
+        result += "<div>";
         for (i = 0; i < sizeOfBoard; i++) {
             if ((lines + i) % 2 === 1) {
-                result = result + BuildBox(lines, i, "greenBox");
+                result += BuildBox(lines, i, "greenBox");
             } else {
-                result = result + BuildBox(lines, i, "yellowBox");
+                result += BuildBox(lines, i, "yellowBox");
             }
         }
-        result = result + "</div>";
+        result += "</div>";
     }
     myHtmlItem.innerHTML = result;
 }
