@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        .cell {
+            width: 64px;
+            height: 64px;
+            border: 1px solid gray;
+            display: inline-block;
+            font-size: 32px;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div><input type="text" name="results" id="result" value="256"></div>
+        <div>
+            <div class="cell" onclick="button('/')">/</div>
+            <div class="cell" onclick="button('*')">*</div>
+            <div class="cell" onclick="button('-')">-</div>
+            <div class="cell" onclick="button('+')">+</div>
+        </div>
+        <div>
+            <div class="cell" onclick="button(7)">7</div>
+            <div class="cell" onclick="button(8)">8</div>
+            <div class="cell" onclick="button(9)">9</div>
+        </div>
+        <div>
+            <div class="cell" onclick="button(4)">4</div>
+            <div class="cell" onclick="button(5)">5</div>
+            <div class="cell" onclick="button(6)">6</div>
+        </div>
+        <div>
+            <div class="cell" onclick="button(1)">1</div>
+            <div class="cell" onclick="button(2)">2</div>
+            <div class="cell" onclick="button(3)">3</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
