@@ -1,17 +1,27 @@
+let x = Math.floor(Math.random() * 3);
 var color = document.getElementsByClassName("box");
-color[2].classList.add("red");
-let seconds = 5;
+color[x].classList.add("red");
+let seconds = 3;
+
+color[x].addEventListener("click", clickTurnOff);
 
 function turnOff() {
     let grabColor = document.getElementsByClassName("red");
-    seconds = seconds - 1;
-    console.log(seconds);
     if (seconds > 0) {
+        seconds = seconds - 1;
+        console.log(seconds);
         setTimeout(turnOff, 1000);
     }
     if (seconds == 0) {
-        grabColor[0].classList.remove("red");
+        if (grabColor.length > 0) {
+            grabColor[0].classList.remove("red");
+        }
     }
+}
+
+function clickTurnOff() {
+    document.getElementsByClassName("red")[0].classList.remove("red");
+    seconds = 0;
 }
 
 setTimeout(turnOff, 1000);
