@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url":"file:///C:/Users/monle399/Documents/3TPIF-E-JS/Classes/01-06-20/index.html",
+            "url":"file:///C:/Users/monle399/Documents/3TPIF-E-JS/Classes/01-07-20/index.html",
 //            "url": "${workspaceFolder}/25-11-19/index.html",
             "webRoot": "${workspaceFolder}"
         }
