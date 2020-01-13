@@ -1,6 +1,6 @@
 "use strict";
 
-const GRID_SIZE = 75; // define a grid of 100 x 100 cells
+const GRID_SIZE = 15; // define a grid of 100 x 100 cells
 let myContainer = document.getElementById("container");
 
 function buildEmptyMatrix(size) {
