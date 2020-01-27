@@ -8,9 +8,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url":"file:///C:/Users/Leonardo/Documents/Documents/VScode/JS/3TPIF-E-JS/Classes/01-19-20/2/index.html",
-//            "url": "${workspaceFolder}/25-11-19/index.html",
+            "url":"file:///C:/Users/monle399/Documents/3TPIF-E-JS/Classes/01-27-20/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
-}
+}7
