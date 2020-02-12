@@ -115,11 +115,11 @@ function resetDisplay() {
 
 //Start-BeadGen
 function createImage() {
-    var htmlItem = document.getElementById("beadCon");
+    let htmlItem = document.getElementById("beadCon");
 
-    var result = "";
+    let result = "";
 
-    var mapOfImage = [
+    let mapOfImage = [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 3, 3, 3, 3, 3, 3, 3, 3, 1],
         [1, 3, 0, 2, 3, 3, 2, 0, 3, 1],
@@ -141,31 +141,72 @@ function createImage() {
     }
     htmlItem.innerHTML = result;
 }
+
+function undoImage() {
+    let htmlItem = document.getElementById("beadCon");
+    let result = "Creation of an image through a matrix";
+    htmlItem.innerHTML = result;
+}
 //End-BeadGen
 
 //Start-ColorTable$¨
 function genTable() {
-    var row = document.getElementById("row").value;
-    var column = document.getElementById("column").value;
-    var color = document.getElementsByClassName("color");
+    let row = document.getElementById("row").value;
+    let column = document.getElementById("column").value;
 
-    var cont = document.getElementById("container");
+    let colIn = document.getElementById("colors").selectedIndex;
+    let colOp = document.getElementById("colors").options;
 
-    var result = "";
+    let cont = document.getElementById("cont");
+
+    let result = "";
 
     for (let a = 0; a < row; a++) {
-        result += "<div class='cell " + color.value + "'>";
+        result += "<div class='cell " + colOp[colIn].value + "'>";
         for (let b = 0; b < column; b++) {
-            result += "<div class='cell" + color.value + " '></div>";
+            result += "<div class='cell " + colOp[colIn].value + " '></div>";
         }
         result += "</div>";
     }
     cont.innerHTML = result;
 }
 
-function undo() {
-    var cont = document.getElementById("container");
-    var result = "";
+function undoGenTable() {
+    let cont = document.getElementById("cont");
+    let result = "";
     cont.innerHTML = result;
 }
 //End-ColorTable
+
+//Start-DrawTable
+const GRID_SIZE = 8;
+var myContainer = document.getElementById("contMatrix");
+
+function buildEmptyMatrix(size) {
+    let myMatrix = new Array();
+    for (let i = 0; i < size; i++) {
+        let myNewRow = new Array();
+        for (let j = 0; j < size; j++) {
+            myNewRow.push(0);
+        }
+        myMatrix.push(newRow);
+    }
+}
+
+for (let i = 0; i < GRID_SIZE; i++) {
+    let myNewRow = document.createElement("div");
+    for (let j = 0; j < GRID_SIZE; j++) {
+        let myNewCell = document.createElement("div");
+        myNewCell.classList.add("cellM");
+        myNewRow.appendChild(myNewCell);
+        myNewCell.addEventListener("click", cellClicked);
+    }
+    myContainer.appendChild(myNewRow);
+}
+
+function cellClicked() {
+    let myClickedCell = event.srcElement;
+
+    myClickedCell.classList.toggle("liveCell");
+}
+//End-DrawTable
