@@ -8,17 +8,17 @@
     <title>Document</title>
     <style>
         #cities {
-            display: none;
+            display: hidden;
         }
     </style>
 </head>
 
-<select name="Country" id="country">
+<select name="Country" id="country" onchange="countryChange()">
     <option value="">Select a Country</option>
-    <option value="Venezuela">Venezuela</option>
-    <option value="Italy">Italy</option>
-    <option value="Luxembourg">Luxembourg</option>
-    <option value="Romania">Romania</option>
+    <option>Venezuela</option>
+    <option>Italy</option>
+    <option>Luxembourg</option>
+    <option>Romania</option>
 </select>
 <select name="Cities" id="cities">
 </select>
