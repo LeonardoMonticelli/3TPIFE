@@ -10,6 +10,11 @@
         #cities {
             display: hidden;
         }
+        
+        #currentImage {
+            height: 100px;
+            width: 100px;
+        }
     </style>
 </head>
 
@@ -20,11 +25,13 @@
     <option>Luxembourg</option>
     <option>Romania</option>
 </select>
-<select name="Cities" id="cities">
+
+<select name="Cities" id="cities" onchange="cityChange()">
 </select>
 
-<body>
+<img id="currentImage" src="" alt="city" class="hidden">
 
+<body>
     <script src="js/script.js"></script>
 </body>
 

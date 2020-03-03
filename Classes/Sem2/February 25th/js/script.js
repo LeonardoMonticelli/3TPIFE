@@ -42,3 +42,9 @@ function countryChange() {
         }
     }
 }
+
+function cityChange() {
+    let imgCity = document.getElementById("currentImage");
+    imgCity.classList.remove("hidden");
+    imgCity.src = document.getElementById("cities").value + ".jpg";
+}
