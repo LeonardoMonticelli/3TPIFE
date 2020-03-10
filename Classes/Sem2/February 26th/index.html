@@ -11,6 +11,19 @@
         input[type="radio"]:checked+label {
             background-color: null;
         }
+        
+        #whatever {
+            background-color: lightyellow;
+            transition: background-color 5s;
+        }
+        
+        #coloredBox {
+            background-color: white;
+            transition: background-color 1s;
+            border: black 1px solid;
+            height: 50px;
+            width: 50px;
+        }
     </style>
 </head>
 
@@ -25,6 +38,10 @@
         <label for="Other">Other</label>
         <button type="button" onclick="alertButton()">clickme</button>
     </form>
+
+    <div id="whatever">my potato</div>
+
+    <div id="coloredBox" onclick="coloredBox()"></div>
 
     <script src="js/script.js"></script>
 </body>
