@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+
+    <style>
+        input[type="radio"]:checked+label {
+            background-color: null;
+        }
+        
+        #whatever {
+            background-color: lightyellow;
+            transition: background-color 5s;
+        }
+        
+        #coloredBox {
+            background-color: white;
+            transition: background-color 1s;
+            border: black 1px solid;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="Other">Other</label>
+        <button type="button" onclick="alertButton()">clickme</button>
+    </form>
+
+    <div id="whatever">my potato</div>
+
+    <div id="coloredBox" onclick="coloredBox()"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

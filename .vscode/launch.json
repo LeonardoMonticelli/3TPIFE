@@ -8,8 +8,12 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
+<<<<<<< HEAD
             "url":"file:///C:/Users/Leonardo/Documents/Documents/VScode/JS/3TPIF-E-JS/Classes/05-25-20/index.html",
+=======
+            "url":"file:///C:/Users/monle399/Documents/3TPIFE-JS/Classes/Sem2/February%2026th/index.html",
+>>>>>>> 0405894ec069535014f209100eaa13873c943bd8
             "webRoot": "${workspaceFolder}"
         }
     ]
-}7
+}

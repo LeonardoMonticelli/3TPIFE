@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #cities {
+            display: hidden;
+        }
+        
+        #currentImage {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<select name="Country" id="country" onchange="countryChange()">
+    <option value="">Select a Country</option>
+    <option>Venezuela</option>
+    <option>Italy</option>
+    <option>Luxembourg</option>
+    <option>Romania</option>
+</select>
+
+<select name="Cities" id="cities" onchange="cityChange()">
+</select>
+
+<img id="currentImage" src="" alt="city" class="hidden">
+
+<body>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
