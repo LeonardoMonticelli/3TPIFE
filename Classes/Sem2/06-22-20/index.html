@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <script src='main.js'></script>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #black {
+            background-color: black;
+        }
+        
+        #red {
+            background-color: red;
+        }
+        
+        #content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #colorPicker {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .selectedColor {
+            border: 5px solid green;
+        }
+    </style>
+</head>
+
+<body onload="finishedLoadingPage()">
+    <div id="content">
+        <canvas onmousedown="startDrawing(event)" onmouseup="stopDrawing(event)" width=500px heigth=500px style="border: 1px solid gray">
+            Your browser does not support the Canvas element.
+        </canvas>
+        <div id="colorPicker">
+            <div class="square" id="black" onclick="colorChange(this.id)"></div>
+            <div class="square" id="red" onclick="colorChange(this.id)"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
